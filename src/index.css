@@ -1,0 +1,86 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+.scoreboardTable {
+padding: 0;
+margin: auto;
+border-collapse: collapse;
+width: 80%;
+text-align: center;
+color: #5795FF;
+}
+.scoreboardTableHeaderRow {
+color: rgb(168, 168, 167);
+font-weight: bold;
+height: 50px;
+}
+.scoreboardTableBodyRow:nth-child(odd){background-color: rgba(128, 128, 128, 0.050);}
+#latestUserScore {
+background-color: crimson;
+}
+.scoreboardTableBodyRow:hover{
+background-color: #5795FF;
+color: white;
+}
+.scoreboardTable tr td {
+height: 25px;
+}
+.scoreboard{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.custom-shape-divider-top-1632617565 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1632617565 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 86px;
+}
+
+.custom-shape-divider-top-1632617565 .shape-fill {
+  fill: #5795FF;
+}
+
+#hourtitle {
+  color: #5795FF;
+  display: inline
+}
+#hourvalue {
+  color: #5795FF;
+  display: inline;
+  padding-right:20px
+}
+#moneytitle{
+  color: #5795FF;
+  display: inline
+}
+#moneyvalue {
+  color: #5795FF;
+  display: inline;
+  padding-right:20px
+}
+#copyBtn{
+  color: #5795FF;
+}
+#tarifa{
+  width: 156px;
+  height: 40px;
+  text-align: center;
+}
+.clip{
+  width: 3rem;
+  font-size: 3rem;
+}
