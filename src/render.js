@@ -176,7 +176,7 @@ copyBtn.onclick = async e => {
     console.log(extraH);
 
     await resolveAfterSeconds();
-    document.getElementById("copyBtn").innerHTML = "📋Copy";
+    document.getElementById("copyBtn").innerHTML = "📋Copy to clipboard";
 
 };
 

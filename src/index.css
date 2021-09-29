@@ -34,46 +34,33 @@ height: 25px;
     overflow-x: auto;
     white-space: nowrap;
 }
-.custom-shape-divider-top-1632617565 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+#titulo{
+  color: white;
 }
-
-.custom-shape-divider-top-1632617565 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 86px;
-}
-
-.custom-shape-divider-top-1632617565 .shape-fill {
-  fill: #5795FF;
-}
-
 #hourtitle {
-  color: #5795FF;
+  color: white;
   display: inline
 }
 #hourvalue {
-  color: #5795FF;
+  color: white;
   display: inline;
   padding-right:20px
 }
 #moneytitle{
-  color: #5795FF;
+ 
   display: inline
 }
 #moneyvalue {
-  color: #5795FF;
+  color: white;
   display: inline;
   padding-right:20px
 }
 #copyBtn{
-  color: #5795FF;
+  color: white;
+  background-color: #6388ff;
+}
+#copyBtn:hover{
+  background-color: #4873fa;
 }
 #tarifa{
   width: 156px;
@@ -83,4 +70,47 @@ height: 25px;
 .clip{
   width: 3rem;
   font-size: 3rem;
+}
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgb(125, 155, 255) 0%, rgb(80, 121, 255) 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:1vh;
+  width:100%;
+}
+
+.flex { /*Flexbox for containers*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:100%;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  height:60vh;
+  text-align:center;
+  background-color: white;
+}
+
+.header br {
+  width: 100%;
 }
