@@ -30,7 +30,7 @@ startBtn.onclick = async e => {
         let arr = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
 
         let keys;
-        for (var key in arr) {
+        for (let key in arr) {
             let json = arr[key];
             keys = Object.keys(json);
             break;
@@ -88,7 +88,7 @@ startBtn.onclick = async e => {
 
         createScoreboardTable();
 
-        for (var key in arr) {
+        for (let key in arr) {
             let rows = []
             let obj = arr[key];
             const objectArray = Object.entries(obj);
@@ -108,7 +108,7 @@ stopBtn.onclick = e => {
     }
     else {
         let tarifa = document.getElementById("tarifa").value;
-        var table = document.getElementById("myTable")
+        let table = document.getElementById("myTable")
         let horas = 0;
         
         for (let i = 1; i <= totalCells; i++) {
@@ -129,10 +129,9 @@ stopBtn.onclick = e => {
         const formatCurrency = new Intl.NumberFormat('es-AR', options2);
         document.getElementById("moneyvalue").innerHTML = formatCurrency.format(horas * tarifa);
     }
-};
+}
 
 clearBtn.onclick = e => {
-
     const scoreDiv = document.querySelector("div.scoreboard")
     while (scoreDiv.firstChild) scoreDiv.removeChild(scoreDiv.firstChild)
     document.getElementById("hourvalue").innerHTML = 0;
@@ -140,9 +139,8 @@ clearBtn.onclick = e => {
     const formatCurrency = new Intl.NumberFormat('es-AR', options2);
     document.getElementById("moneyvalue").innerHTML = formatCurrency.format(0);
     document.getElementById("tarifa").value = '';
+}
 
-
-};
 copyBtn.onclick = async e => {
     let isEmpty;
     let extraH = document.getElementById("hourvalue").innerHTML;
